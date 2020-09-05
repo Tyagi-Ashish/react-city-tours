@@ -1,0 +1,42 @@
+@import '../../index.scss';
+
+.navBar{
+  background: $mainBlack;
+  color: $mainGreen;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  
+  & img{
+    padding: 0.8rem;
+    width: 150px;
+    height: 80px;
+  }
+  .nav-links{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+    
+
+    .nav-link{
+      font-size: 110%;
+      margin-right: 2rem;
+      padding: 5px 0;
+      text-decoration: none;
+      color: $mainWhite;
+      text-transform: capitalize;
+      border-bottom: 2px solid transparent;
+      border-radius: 1px;
+      transition: border-bottom 0.5s linear;
+
+      &:hover {
+        border-bottom: 2px solid $mainGreen;
+      }
+    }
+    .active{
+      color: $mainGreen;
+    }
+  }
+}
